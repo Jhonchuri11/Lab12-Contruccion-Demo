@@ -15,7 +15,7 @@ public interface VetService {
     Vet findById(Integer id) throws vetNotFoundException;
 
 
-    Vet findByFirst_name(String first_name);
+    List<Vet> findByFirst_name(String first_name);
 
     List<Vet> findAll();
 }
