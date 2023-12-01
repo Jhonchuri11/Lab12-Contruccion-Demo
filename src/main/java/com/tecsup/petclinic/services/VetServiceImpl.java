@@ -62,7 +62,7 @@ public class VetServiceImpl implements VetService {
         Optional<Vet> vet = vetRepository.findById(id);
 
         if (!vet.isPresent())
-            throw  new vetNotFoundException("Record not found..!");
+            throw  new vetNotFoundException("Record not founds..!");
         return vet.get();
     }
 
